@@ -1,0 +1,48 @@
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Mongoose Scraper</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/saved">Saved Articles</a>
+      </li>
+      <li>
+        <a id="scrape-btn" class="btn btn-danger">FIND LATEST ARTICLES!</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="jumbotron text-center">
+    <div class="caption">
+      <h1>Mongoose Scraper</h1>
+      <h4>New York Times Edition</h4>
+    </div>
+  </div>
+  <div id="article-container">
+    {{#each articles}} {{> article-block}}
+    {{/each}}
+  </div>
+</div>
+<footer>
+  <div id="big-footer">
+    <div id="small-footer"></div>
+  </div>
+</footer>
+
+<div class="modal fade" id="newArticleModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <h3 class="text-center">Added {{newArticleCount}} new articles!</h3>
+      </div>
+    </div>
+  </div>
+</div>

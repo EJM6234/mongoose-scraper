@@ -1,0 +1,29 @@
+{
+  "name": "mongoose-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EJM6234/mongoose-scraper.git"
+  },
+  "author": "EJ Morgan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EJM6234/mongoose-scraper/issues"
+  },
+  "homepage": "https://github.com/EJM6234/mongoose-scraper#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.13.9",
+    "sass": "^1.0.0-beta.4"
+  }
+}

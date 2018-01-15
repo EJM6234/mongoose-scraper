@@ -1,0 +1,36 @@
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Mongoose Scraper</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/saved">Saved Articles</a>
+      </li>
+      <li>
+        <a id="scrape-btn" class="btn btn-danger">SCRAPE NEW ARTICLES!</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="jumbotron text-center">
+    <div class="caption">
+      <h1>Mongoose Scraper</h1>
+      <h4>New York Times Edition</h4>
+      <h4>Saved Articles</h4>
+    </div>
+  </div>
+  <div id="article-container">
+    {{#each savedArticles}} {{> saved-article-block}}
+    {{/each}}
+  </div>
+</div>
+<footer>
+  <div id="big-footer">
+    <div id="small-footer"></div>
+  </div>
+</footer>
