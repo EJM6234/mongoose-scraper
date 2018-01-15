@@ -20,7 +20,7 @@ app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
 mongoose.Promise = Promise;
-mongoose.connect("mongodb://localhost/scraper", {useMongoClient: true});
+mongoose.connect(MONGODB_URI, {useMongoClient: true});
 mon.on('error', console.error.bind(console, 'connection error:'));
 mon.once('open', function() {
   console.log("Mongoose DB connected!");
